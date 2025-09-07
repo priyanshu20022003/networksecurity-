@@ -60,7 +60,7 @@ class NetworkDataExtract:
 
 
 if __name__ == '__main__':
-    file_path = './Network_data/phisingData.csv'  # ✅ Check spelling of folder/file
+    file_path = './Network_data/phisingData.csv'  
     database = 'priyanshu'
     collection = 'network_data'
 

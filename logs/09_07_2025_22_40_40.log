@@ -1,0 +1,4 @@
+[2025-09-07 22:40:40,809] 20 root - INFO - Logging has been configured successfully.
+[2025-09-07 22:40:41,856] 18 root - INFO - Initiating the data ingestion process...
+[2025-09-07 22:40:44,381] 38 root - INFO - Fetched 0 rows and 0 columns from MongoDB.
+[2025-09-07 22:40:44,381] 55 root - INFO - Data saved to feature store: Artifacts\09_07_2025_22_40_41\data_ingestion\feature_store\network_data\phisingdata.csv

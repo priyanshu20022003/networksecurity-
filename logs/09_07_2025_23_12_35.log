@@ -1,0 +1,6 @@
+[2025-09-07 23:12:35,223] 20 root - INFO - Logging has been configured successfully.
+[2025-09-07 23:12:36,498] 18 root - INFO - Initiating the data ingestion process...
+[2025-09-07 23:12:39,807] 65 root - INFO - Performed train test split on the dataframe
+[2025-09-07 23:12:39,807] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-09-07 23:12:39,807] 75 root - INFO - Exporting train and test file path.
+[2025-09-07 23:12:39,867] 84 root - INFO - Exported train and test file path.

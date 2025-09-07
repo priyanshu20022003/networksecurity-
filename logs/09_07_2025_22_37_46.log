@@ -1,0 +1,10 @@
+[2025-09-07 22:37:46,632] 20 root - INFO - Logging has been configured successfully.
+[2025-09-07 22:37:47,662] 18 root - INFO - Initiating the data ingestion process...
+[2025-09-07 22:37:50,067] 38 root - INFO - Data fetched from MongoDB: 0 rows, 0 columns.
+[2025-09-07 22:37:50,067] 41 root - WARNING - \u26a0\ufe0f DataFrame returned from MongoDB is empty!
+[2025-09-07 22:37:50,067] 87 root - INFO - Initial dataframe shape: (0, 0)
+[2025-09-07 22:37:50,080] 88 root - INFO - First 5 rows:
+Empty DataFrame
+Columns: []
+Index: []
+[2025-09-07 22:37:50,083] 56 root - INFO - Saving data to feature store at Artifacts\09_07_2025_22_37_46\data_ingestion\feature_store\network_data\phisingdata.csv
