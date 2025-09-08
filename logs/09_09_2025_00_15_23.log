@@ -1,0 +1,15 @@
+[2025-09-09 00:15:23,113] 20 root - INFO - Logging has been configured successfully.
+[2025-09-09 00:15:23,145] 20 root - INFO - Initiating the Data Ingestion process...
+[2025-09-09 00:15:26,665] 40 root - INFO - Fetched 11055 rows and 32 columns from MongoDB.
+[2025-09-09 00:15:26,683] 48 root - INFO - Sample data:
+   having_IP_Address  URL_Length  Shortining_Service  having_At_Symbol  ...  Google_Index  Links_pointing_to_page  Statistical_report  Result
+0                 -1           1                   1                 1  ...             1                       1                  -1      -1
+1                  1           1                   1                 1  ...             1                       1                   1      -1
+2                  1           0                   1                 1  ...             1                       0                  -1      -1
+3                  1           0                   1                 1  ...             1                      -1                   1      -1
+4                  1           0                  -1                 1  ...             1                       1                   1       1
+
+[5 rows x 31 columns]
+[2025-09-09 00:15:26,740] 61 root - INFO - Data saved to feature store: Artifacts\09_09_2025_00_15_23\data_ingestion\feature_store\Network_data\phisingData.csv
+[2025-09-09 00:15:26,743] 76 root - INFO - Train-test split completed: Train=(8844, 31), Test=(2211, 31)
+[2025-09-09 00:15:26,788] 84 root - INFO - Train and test data exported successfully.

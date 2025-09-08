@@ -1,27 +1,45 @@
 from networksecurity.components.data_ingestion import DataIngestion
-from networksecurity.entity.config_entity import TrainingPipelineConfig, DataIngestionConfig
+from networksecurity.components.data_validation import DataValidation
+from networksecurity.components.data_transformation import DataTransformation
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
+from networksecurity.entity.config_entity import (
+    TrainingPipelineConfig,
+    DataIngestionConfig,
+    DataValidationConfig,
+    DataTransformationConfig,
+)
+
 import sys
 
 if __name__ == '__main__':
     try:
-        # Create Training Pipeline Configuration
+        # Step 1: Initialize the training pipeline configuration
         training_pipeline_config = TrainingPipelineConfig()
 
-        # Create Data Ingestion Config
+        # Step 2: Data Ingestion
         data_ingestion_config = DataIngestionConfig(training_pipeline_config)
-
-        # Initialize Data Ingestion Component
         data_ingestion = DataIngestion(data_ingestion_config)
-
-        logging.info("Initiating the data ingestion process...")
-
-        # Run Data Ingestion
+        logging.info("Initiating Data Ingestion...")
         data_ingestion_artifact = data_ingestion.initiate_data_ingestion()
+        logging.info("Data Ingestion Completed")
+        print("Data Ingestion Artifact:", data_ingestion_artifact)
 
-        logging.info("Data Ingestion Completed Successfully")
-        print(data_ingestion_artifact)
+        # Step 3: Data Validation
+        data_validation_config = DataValidationConfig(training_pipeline_config)
+        data_validation = DataValidation(data_ingestion_artifact, data_validation_config)
+        logging.info("Initiating Data Validation...")
+        data_validation_artifact = data_validation.initiate_data_validation()
+        logging.info("Data Validation Completed")
+        print("Data Validation Artifact:", data_validation_artifact)
+
+        # Step 4: Data Transformation
+        data_transformation_config = DataTransformationConfig(training_pipeline_config)
+        logging.info("Initiating Data Transformation...")
+        data_transformation = DataTransformation(data_validation_artifact, data_transformation_config)
+        data_transformation_artifact = data_transformation.initiate_data_transformation()
+        logging.info("Data Transformation Completed")
+        print("Data Transformation Artifact:", data_transformation_artifact)
 
     except Exception as e:
         raise NetworkSecurityException(e, sys)
