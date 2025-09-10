@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/bhard/Desktop/Udemy_final/networksecurity/mlruns/0/models/m-57f9a219dc414f7b8bd425978ac6f910/artifacts
+creation_timestamp: 1757532100959
+experiment_id: '0'
+last_updated_timestamp: 1757532107322
+model_id: m-57f9a219dc414f7b8bd425978ac6f910
+model_type: null
+name: model
+source_run_id: 98b858cd1bd744089a0af3d20fbe45b1
+status: 2
+status_message: null

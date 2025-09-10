@@ -1,0 +1,30 @@
+[2025-09-11 00:18:21,969] 20 root - INFO - Logging has been configured successfully.
+[2025-09-11 00:18:22,091] 23 root - INFO - Initiating Data Ingestion...
+[2025-09-11 00:18:22,091] 97 root - INFO - Starting data ingestion process.
+[2025-09-11 00:18:22,091] 30 root - INFO - Connecting to MongoDB at mongodb+srv://bhardwaj05priyanshu_db_user:Admin123@cluster0.a6wswrk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+[2025-09-11 00:18:24,195] 36 root - INFO - Reading data from collection: priyanshu.network_data
+[2025-09-11 00:18:25,455] 46 root - INFO - Number of rows fetched from MongoDB: 11055
+[2025-09-11 00:18:25,487] 50 root - INFO - Dropped '_id' column from DataFrame.
+[2025-09-11 00:18:25,487] 100 root - INFO - Splitting data into train and test sets.
+[2025-09-11 00:18:25,487] 66 root - INFO - Performing train-test split.
+[2025-09-11 00:18:25,487] 73 root - INFO - Train set size: 8844, Test set size: 2211
+[2025-09-11 00:18:25,536] 85 root - INFO - Train and test files saved at Artifacts\09_11_2025_00_18_21\data_ingestion\ingested\train.csv and Artifacts\09_11_2025_00_18_21\data_ingestion\ingested\test.csv
+[2025-09-11 00:18:25,536] 108 root - INFO - Data Ingestion Artifact: DataIngestionArtifact(trained_file_path='Artifacts\\09_11_2025_00_18_21\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\09_11_2025_00_18_21\\data_ingestion\\ingested\\test.csv')
+[2025-09-11 00:18:25,536] 109 root - INFO - Data ingestion process completed successfully.
+[2025-09-11 00:18:25,536] 25 root - INFO - Data Ingestion Completed
+[2025-09-11 00:18:25,554] 31 root - INFO - Initiating Data Validation...
+[2025-09-11 00:18:25,568] 32 root - INFO - Required number of columns:2
+[2025-09-11 00:18:25,568] 33 root - INFO - Data frame has columns:31
+[2025-09-11 00:18:25,568] 32 root - INFO - Required number of columns:2
+[2025-09-11 00:18:25,568] 33 root - INFO - Data frame has columns:31
+[2025-09-11 00:18:25,703] 33 root - INFO - Data Validation Completed
+[2025-09-11 00:18:25,703] 38 root - INFO - Initiating Data Transformation...
+[2025-09-11 00:18:25,703] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-09-11 00:18:25,703] 65 root - INFO - Starting data transformation
+[2025-09-11 00:18:25,736] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-09-11 00:18:25,736] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-09-11 00:18:25,759] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-11 00:18:25,766] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-11 00:18:25,766] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-11 00:18:25,766] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-11 00:18:25,766] 41 root - INFO - Data Transformation Completed

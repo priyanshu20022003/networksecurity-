@@ -1,0 +1,5 @@
+[2025-09-11 00:13:02,149] 20 root - INFO - Logging has been configured successfully.
+[2025-09-11 00:13:02,241] 23 root - INFO - Initiating Data Ingestion...
+[2025-09-11 00:13:02,241] 97 root - INFO - Starting data ingestion process.
+[2025-09-11 00:13:02,241] 30 root - INFO - Connecting to MongoDB at mongodb+srv://bhardwaj05priyanshu_db_user:Admin123@cluster0.a6wswrk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+[2025-09-11 00:13:04,438] 36 root - INFO - Reading data from collection: KRISHAI.NetworkData

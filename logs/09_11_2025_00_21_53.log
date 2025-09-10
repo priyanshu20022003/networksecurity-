@@ -1,0 +1,37 @@
+[2025-09-11 00:21:53,473] 20 root - INFO - Logging has been configured successfully.
+[2025-09-11 00:22:06,901] 20 root - INFO - Initiate the data ingestion
+[2025-09-11 00:22:06,901] 97 root - INFO - Starting data ingestion process.
+[2025-09-11 00:22:06,901] 30 root - INFO - Connecting to MongoDB at mongodb+srv://bhardwaj05priyanshu_db_user:Admin123@cluster0.a6wswrk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+[2025-09-11 00:22:09,003] 36 root - INFO - Reading data from collection: priyanshu.network_data
+[2025-09-11 00:22:10,109] 46 root - INFO - Number of rows fetched from MongoDB: 11055
+[2025-09-11 00:22:10,125] 50 root - INFO - Dropped '_id' column from DataFrame.
+[2025-09-11 00:22:10,125] 100 root - INFO - Splitting data into train and test sets.
+[2025-09-11 00:22:10,125] 66 root - INFO - Performing train-test split.
+[2025-09-11 00:22:10,125] 73 root - INFO - Train set size: 8844, Test set size: 2211
+[2025-09-11 00:22:10,178] 85 root - INFO - Train and test files saved at Artifacts\09_11_2025_00_21_53\data_ingestion\ingested\train.csv and Artifacts\09_11_2025_00_21_53\data_ingestion\ingested\test.csv
+[2025-09-11 00:22:10,178] 108 root - INFO - Data Ingestion Artifact: DataIngestionArtifact(trained_file_path='Artifacts\\09_11_2025_00_21_53\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\09_11_2025_00_21_53\\data_ingestion\\ingested\\test.csv')
+[2025-09-11 00:22:10,178] 109 root - INFO - Data ingestion process completed successfully.
+[2025-09-11 00:22:10,178] 22 root - INFO - Data Initiation Completed
+[2025-09-11 00:22:10,194] 26 root - INFO - Initiate the data Validation
+[2025-09-11 00:22:10,226] 32 root - INFO - Required number of columns:2
+[2025-09-11 00:22:10,226] 33 root - INFO - Data frame has columns:31
+[2025-09-11 00:22:10,226] 32 root - INFO - Required number of columns:2
+[2025-09-11 00:22:10,226] 33 root - INFO - Data frame has columns:31
+[2025-09-11 00:22:10,359] 28 root - INFO - data Validation Completed
+[2025-09-11 00:22:10,359] 31 root - INFO - data Transformation started
+[2025-09-11 00:22:10,359] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-09-11 00:22:10,359] 65 root - INFO - Starting data transformation
+[2025-09-11 00:22:10,383] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-09-11 00:22:10,383] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-09-11 00:22:10,404] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-11 00:22:10,412] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-11 00:22:10,412] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-11 00:22:10,412] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-11 00:22:10,412] 35 root - INFO - data Transformation completed
+[2025-09-11 00:22:10,412] 37 root - INFO - Model Training sstared
+[2025-09-11 00:24:57,274] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-11 00:24:57,291] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-11 00:24:57,291] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-11 00:24:57,319] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-11 00:24:57,319] 97 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\09_11_2025_00_21_53\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9915521628498728, precision_score=0.9894373349583587, recall_score=0.9936760505915953), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9695531830763148, precision_score=0.9623233908948194, recall_score=0.9768924302788845))
+[2025-09-11 00:24:57,319] 42 root - INFO - Model Training artifact created
